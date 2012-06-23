@@ -13,6 +13,7 @@ body {
 }
 img {
 	height: auto;
+	max-width: 100%;
 }
 h2 {
 	line-height: 32px;
@@ -66,8 +67,8 @@ input[type=password] {
 	position: fixed;
 	top: 0;
 	height: 36px;
-	width: 96%;
-	padding: 15px 2% 0;
+	width: 93%;
+	padding: 15px 4% 0;
 	color: white;
 }
 .navbar-fixed-top a.brand {
@@ -89,14 +90,6 @@ input[type=password] {
 	margin: 100px auto;
 	padding: 40px;
 	border-radius: 6px;
-}
-@media(max-width:480px) {
-	.login {
-		width: 90%;
-		margin: 40px auto;
-		padding: 20px;
-		border-radius: 6px;
-	}
 }
 .login form {
 	margin-top: 20px;
@@ -132,6 +125,7 @@ input[type=password] {
 	line-height: 0.6;
 }
 
+/*	Reeder	*/
 .reeder {
 	display: none;
 	position: fixed;
@@ -144,16 +138,6 @@ input[type=password] {
 	padding: 1%;
 	height: 90%;
 	border-radius: 4px;
-}
-@media(max-width:767px) {
-	.reeder {
-		top: 0;
-		left: 0;
-		margin: 0;
-		width: 96%;
-		padding: 2%;
-		height: 100%;
-	}
 }
 .reeder .header {
 	padding: 10px 40px 0 15px;
@@ -187,12 +171,12 @@ input[type=password] {
 	color: #666;
 	border-color: #666;
 }
-
 .entry {
 	padding-bottom: 40px;
 	border-bottom: 1px solid #888;
 	margin-bottom: 40px;
 }
+/*	End Reeder	*/
 
 .mask {
 	display: none;

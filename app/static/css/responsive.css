@@ -1,0 +1,29 @@
+@media(max-width:1100) {
+	.subscription-box {
+		width: 20%;
+	}
+}
+@media(max-width:800) {
+	.subscription-box {
+		width: 30%;
+	}
+	.reeder {
+		top: 0;
+		left: 0;
+		margin: 0;
+		width: 96%;
+		padding: 2%;
+		height: 100%;
+	}
+}
+@media(max-width:480px) {
+	.subscription-box {
+		width: 100%;
+	}
+	.login {
+		width: 90%;
+		margin: 40px auto;
+		padding: 20px;
+		border-radius: 6px;
+	}
+}
