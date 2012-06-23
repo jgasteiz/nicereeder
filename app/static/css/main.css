@@ -1,0 +1,207 @@
+body {
+	font-family: 'Helvetica Neue', helvetica, arial;
+	background: url('pluses-light.png');
+	margin: 0;
+	padding-top: 80px;
+}
+
+.float-right {
+	float: right;
+}
+.container {
+	padding: 0 20px;
+}
+img {
+	height: auto;
+}
+h2 {
+	line-height: 32px;
+}
+a {
+	color: #0088CC;
+	text-decoration: none;
+}
+a:hover {
+	color: #00AAEE;
+	text-decoration: underline;
+}
+input[type=text],
+input[type=password] {
+	display: block;
+	width: 100%;
+	border: 1px solid #AAA;
+	padding: 4px 10px;
+	font-size: 1.2em;
+	margin-bottom: 5px;
+}
+.btn {
+	width: 80px;
+	height: 27px;
+	display: block;
+	cursor: pointer;
+	margin-top: 10px;
+	background-color: #FA573C;
+	background-image: -webkit-linear-gradient(top,#FA573C,#DD4B39);
+	background-image: -moz-linear-gradient(top,#FA573C,#DD4B39);
+	background-image: -ms-linear-gradient(top,#FA573C,#DD4B39);
+	background-image: -o-linear-gradient(top,#FA573C,#DD4B39);
+	background-image: linear-gradient(top,#FA573C,#DD4B39);
+	border: 1px solid #C03F2E;
+	color: white;
+	text-shadow: 0 1px rgba(0, 0, 0, 0.1);
+	text-transform: uppercase;
+}
+.btn:hover {
+	background-color: #DD4B39;
+	background-image: -webkit-linear-gradient(top,#DD4B39,#C03F2E);
+	background-image: -moz-linear-gradient(top,#DD4B39,#C03F2E);
+	background-image: -ms-linear-gradient(top,#DD4B39,#C03F2E);
+	background-image: -o-linear-gradient(top,#DD4B39,#C03F2E);
+	background-image: linear-gradient(top,#DD4B39,#C03F2E);
+}
+
+/*	Navbar	*/
+.navbar-fixed-top {
+	background: url('pluses-dark.png');
+	position: fixed;
+	top: 0;
+	height: 36px;
+	width: 96%;
+	padding: 15px 2% 0;
+	color: white;
+}
+.navbar-fixed-top a.brand {
+	color: #AAA;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+.navbar-fixed-top p {
+	margin: 0;
+}
+/*	End Navbar	*/
+
+
+
+/*	Users	*/
+.login {
+	background-color: #EEE;
+	width: 40%;
+	margin: 100px auto;
+	padding: 40px;
+	border-radius: 6px;
+}
+@media(max-width:480px) {
+	.login {
+		width: 90%;
+		margin: 40px auto;
+		padding: 20px;
+		border-radius: 6px;
+	}
+}
+.login form {
+	margin-top: 20px;
+}
+/*	End Users	*/
+
+
+.mission {
+	margin-bottom: 20px;
+}
+
+
+.subscription-box {
+	width: 12%;
+	float: left;
+	font-size: 1.3em;
+	font-weight: bold;
+	margin-right: 2%;
+	background-color: #EEE;
+	cursor: pointer;
+	border-radius: 6px;
+	min-height: 80px;
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 1px 2px #888;
+}
+.subscription-box.new-subscription {
+	background-color: #FA573C;
+	font-size: 4em;
+	font-weight: bold;
+	line-height: 1.2;
+	line-height: 0.6;
+}
+
+.reeder {
+	display: none;
+	position: fixed;
+	top: 60px;
+	left: 50%;
+	margin-left: -40%;
+	z-index: 9999;
+	background: white;
+	width: 78%;
+	padding: 1%;
+	height: 90%;
+	border-radius: 4px;
+}
+@media(max-width:767px) {
+	.reeder {
+		top: 0;
+		left: 0;
+		margin: 0;
+		width: 96%;
+		padding: 2%;
+		height: 100%;
+	}
+}
+.reeder .header {
+	padding: 10px 40px 0 15px;
+	font-size: 3em;
+	font-weight: bold;
+	line-height: 1;
+}
+.progress .bar {
+	width: 40%;
+}
+.reeder .content {
+	height: 90%;
+	padding: 15px;
+	overflow-y: auto;
+	margin-top: 10px;
+}
+.close-reeder {
+	font-weight: bold;
+	color: 	#888;
+	font-size: 1.4em;
+	line-height: 1;
+	float: right;
+	cursor: pointer;
+	border: 2px solid #888;
+	display: inline-block;
+	border-radius: 100px;
+	padding: 2px 8px 6px 8px;
+	vertical-align: bottom;
+}
+.close-reeder:hover {
+	color: #666;
+	border-color: #666;
+}
+
+.entry {
+	padding-bottom: 40px;
+	border-bottom: 1px solid #888;
+	margin-bottom: 40px;
+}
+
+.mask {
+	display: none;
+	top: 0;
+	left: 0;
+	position: fixed;
+	height: 100%;
+	width: 100%;
+	z-index: 8888;
+	background: black;
+	opacity: 0.6;
+}

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block title %}niceReeder{% endblock %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+        <div class="subscription-box new-subscription">+</div>
+    {% else %}
+        <h1 class="mission">Read something!</h1>
+    {% endif %}
+
+    {% for s in subscription_list %}
+
+        <div id="{{ s.pk }}" class="subscription-box read-subscription">
+            {{ s.name|truncatechars:38 }}
+        </div>
+
+    {% endfor %}
+
+
+    <div class="reeder">
+        <a class="close-reeder">x</a>
+        <div id="reeder_head" class="header"></div>
+        <div id="reeder_content" class="content"></div>
+    </div>
+    <div class="mask"></div>
+
+{% endblock %}
