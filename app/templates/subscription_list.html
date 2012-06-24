@@ -26,4 +26,8 @@
     </div>
     <div class="mask"></div>
 
+    {% if not user.is_authenticated %}
+        {% csrf_token %}
+    {% endif %}
+
 {% endblock %}

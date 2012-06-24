@@ -4,6 +4,7 @@ from app.models import Subscription
 from django.utils import simplejson
 from django.http import HttpResponse
 from django.contrib.auth.models import User
+from django.core.context_processors import csrf
 from django.views.generic import ListView, View
 
 class SubscriptionListView(ListView):
@@ -18,10 +19,6 @@ class SubscriptionListView(ListView):
 			return Subscription.objects.filter(user=self.request.user)
 		else:
 			return Subscription.objects.order_by('?')[:5]
-	def get_context_data(self, **kwargs):
-		context = super(SubscriptionListView, self).get_context_data(**kwargs)
-		# context.update({'user': self.request.user})
-		return context
 
 class EntryListResponseView(View):
 	"""
