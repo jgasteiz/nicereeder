@@ -13,7 +13,6 @@ urlpatterns = patterns('',
 	url(r'^register/?',
 		TemplateView.as_view(
 			template_name='users/register.html')),
-	url(r'', include('social_auth.urls')),
 	url(r'^$', 
 		SubscriptionListView.as_view(),
 		name='home'),
