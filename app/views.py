@@ -20,6 +20,38 @@ class SubscriptionListView(ListView):
 		else:
 			return Subscription.objects.order_by('?')[:5]
 
+class EntryListView(ListView):
+	"""
+	Loads a subscription entries
+	"""
+	template_name = 'entry_list.html'
+	context_object_name = 'entry_list'
+
+	def get_queryset(self):
+		slug = self.kwargs['slug']
+		subscription = Subscription.objects.filter(slug=slug)[0]
+		feed = feedparser.parse(subscription.url)
+		entry_list = []
+		for entry in feed.entries:
+			if "content" in entry:
+				body = entry["content"][0]["value"]
+			else:
+				# FIXME
+				# little hack: some feeds goes with summary instead content
+				body = entry["summary"]
+			link = entry["link"]
+			# FIXME
+			# Gets an error on ubuntu :S
+			# date = entry["date"]
+			date = ""
+			entry_list.append({	
+				'title': entry["title"], 
+				'url': link, 
+				'body': body, 
+				'date': date})
+		return { 'entries': entry_list, 'name': subscription.name }
+
+
 class EntryListResponseView(View):
 	"""
 	Loads a subscription entries

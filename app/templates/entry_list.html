@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}{{ entry_list.name }}{% endblock %}
+
+{% block content %}
+
+    <div class="entries">
+        <div class="entries-header">
+            <a class="go-back" href="/">
+                ← Go back
+            </a>
+        </div>
+        {% for e in entry_list.entries %}
+            <div class="entry">
+                <h1>
+                    <a target="_blank" href="{{ e.url }}">
+                        {{ e.title}}
+                    </a>
+                </h1>
+                {{ e.body|safe }}
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

@@ -1,19 +1,21 @@
 @media(max-width:1100) {
 	.subscription-box {
-		width: 20%;
+		width: 30%;
 	}
 }
 @media(max-width:800) {
 	.subscription-box {
-		width: 30%;
+		width: 40%;
 	}
-	.reeder {
-		top: 0;
-		left: 0;
-		margin: 0;
+	.entries {
 		width: 96%;
-		padding: 2%;
-		height: 100%;
+		padding: 20px 2%;
+	}
+	.container {
+		padding: 0;
+	}
+	body {
+		padding-top: 50px;
 	}
 }
 @media(max-width:480px) {

@@ -1,15 +1,9 @@
+/*	Base	*/
 body {
 	font-family: 'Helvetica Neue', helvetica, arial;
 	background: url('pluses-light.png');
 	margin: 0;
 	padding-top: 80px;
-}
-
-.float-right {
-	float: right;
-}
-.container {
-	padding: 0 20px;
 }
 img {
 	height: auto;
@@ -60,8 +54,9 @@ input[type=password] {
 	background-image: -o-linear-gradient(top,#DD4B39,#C03F2E);
 	background-image: linear-gradient(top,#DD4B39,#C03F2E);
 }
-
-/*	Navbar	*/
+.container {
+	padding: 0 20px;
+}
 .navbar-fixed-top {
 	background: url('pluses-dark.png');
 	position: fixed;
@@ -80,11 +75,10 @@ input[type=password] {
 .navbar-fixed-top p {
 	margin: 0;
 }
-/*	End Navbar	*/
+/*	End Base	*/
 
 
-
-/*	Users	*/
+/*	Users pages	*/
 .login {
 	background-color: #EEE;
 	width: 40%;
@@ -98,13 +92,14 @@ input[type=password] {
 /*	End Users	*/
 
 
+
+/*	Subscriptions page	*/
 .mission {
 	margin-bottom: 20px;
+	color: #444;
 }
-
-
 .subscription-box {
-	width: 12%;
+	width: 18%;
 	float: left;
 	font-size: 1.3em;
 	font-weight: bold;
@@ -125,9 +120,46 @@ input[type=password] {
 	line-height: 1.2;
 	line-height: 0.6;
 }
+/*	End Subscription boxes	*/
+
+
+/*	Reading page	*/
+.go-back {
+	color: #666;
+	font-size: 1.4em;
+	font-weight: bold;
+}
+.go-back:hover {
+	color: #444;
+	text-decoration: underline;
+}
+.entries {
+	background: white;
+	width: 80%;
+	margin: 0 auto;
+	padding: 40px;
+}
+.entries-header {
+	height: 30px;
+}
+.entry {
+	border-bottom: 1px solid #888;
+	margin-bottom: 40px;
+	padding-bottom: 40px;
+}
+/*	End Reading page	*/
+
+
+
+/*	OOCSS	*/
+.float-right {
+	float: right;
+}
+/*	End OOCSS	*/
+
 
 /*	Reeder	*/
-.reeder {
+/*.reeder {
 	display: none;
 	position: fixed;
 	top: 60px;
@@ -172,13 +204,6 @@ input[type=password] {
 	color: #666;
 	border-color: #666;
 }
-.entry {
-	padding-bottom: 40px;
-	border-bottom: 1px solid #888;
-	margin-bottom: 40px;
-}
-/*	End Reeder	*/
-
 .mask {
 	display: none;
 	top: 0;
@@ -190,3 +215,7 @@ input[type=password] {
 	background: black;
 	opacity: 0.6;
 }
+*/
+
+/*	End Reeder	*/
+
